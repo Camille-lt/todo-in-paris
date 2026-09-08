@@ -1,5 +1,4 @@
 # todo-in-paris
-# Open-GoParis 🗼
 
 Application web fullstack permettant de consulter les événements et sorties culturelles à Paris via l'API Paris Open Data, et de gérer des réservations en ligne.
 
