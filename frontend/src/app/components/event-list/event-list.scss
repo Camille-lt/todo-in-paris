@@ -1,0 +1,21 @@
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  img {
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .chips-container {
+    margin-top: 1rem;
+  }
+}
