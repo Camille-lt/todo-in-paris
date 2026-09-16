@@ -1,0 +1,16 @@
+import { inject, Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { Event } from '../models/event';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class EventService {
+  private http = inject(HttpClient);
+  private apiUrl = 'http://localhost:8080/api/events';
+
+ getEvents() {
+    return this.http.get(this.apiUrl);
+  }
+}
