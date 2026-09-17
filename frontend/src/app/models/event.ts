@@ -1,13 +1,14 @@
 export interface Event {
-    id: string;
-    tite: string;
-    leadText?: string;
-    coverUrl: string;
-    dateStart: string;
-    dateEnd?: string;
-    adressName?: string;
-    adressStreet?: string;
-    adressZipcode?: string;
-    adressCity?: string;
-    priceType?: string;
+  id: string;
+  title: string;
+  leadText: string;
+  description: string;
+  coverUrl: string;
+  dateStart: string;
+  dateEnd: string;
+  addressName: string;
+  addressStreet: string;
+  addressZipcode: string;
+  addressCity: string;
+  priceType: string;
 }

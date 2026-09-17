@@ -10,7 +10,7 @@ export class EventService {
   private http = inject(HttpClient);
   private apiUrl = 'http://localhost:8080/api/events';
 
- getEvents() {
-    return this.http.get(this.apiUrl);
+  getEvents(): Observable<Event[]> {
+    return this.http.get<Event[]>(this.apiUrl);
   }
 }
